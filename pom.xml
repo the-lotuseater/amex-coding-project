@@ -11,11 +11,35 @@
 
 
 	<dependencies>
+		<!-- GlassFish -->
+		<dependency>
+			<groupId>org.glassfish.mq</groupId>
+			<artifactId>mq-distribution</artifactId>
+			<version>5.1.4</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.glassfish.main.appclient</groupId>
+			<artifactId>gf-client</artifactId>
+			<version>5.0</version>
+		</dependency>
+	
+		<dependency>
+			<groupId>org.glassfish.mq</groupId>
+			<artifactId>imq</artifactId>
+			<version>5.1</version>
+		</dependency>
+	
 		<!-- Logging -->
 		<dependency>
-			<groupId>org.apache.logging.log4j</groupId>
-			<artifactId>log4j-core</artifactId>
-			<version>2.13.3</version>
+		   <groupId>org.slf4j</groupId>
+		   <artifactId>slf4j-api</artifactId>
+		   <version>1.7.5</version>
+		</dependency>
+		<dependency>
+		   <groupId>org.slf4j</groupId>
+		   <artifactId>slf4j-log4j12</artifactId>
+		   <version>1.7.5</version>
 		</dependency>
 	
 		<dependency>
@@ -29,9 +53,7 @@
 			<groupId>org.junit.jupiter</groupId>
 			<artifactId>junit-jupiter-engine</artifactId>
 			<version>5.0.0</version>
-		<scope>test</scope>
-</dependency>
-		
-		
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 </project>
